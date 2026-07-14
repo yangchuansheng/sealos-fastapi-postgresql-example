@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "runId": "p24-python-practice-20260715",
+  "repository": {
+    "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+    "owner": "yangchuansheng",
+    "visibility": "public",
+    "defaultBranch": "main",
+    "pushPermission": true,
+    "testedSourceCommit": "ec91a47f6c2b5d1253cc603eb06df922bd901fff",
+    "testedSourceTree": "a4e88de39bce75b2a6f24792deec292ee18e1df7"
+  },
+  "sourceTreeMode": "0700",
+  "python": {
+    "version": "3.12.13",
+    "executablePath": "venvs/fastapi-source/bin/python",
+    "pathRedacted": true
+  },
+  "lock": {
+    "path": "requirements.lock",
+    "sha256": "0dec602df366b6a9030addc0df937087c6c0a525b9c1a6e68d4f9e8e1b11ba7d"
+  },
+  "packageArtifacts": [
+    {
+      "name": "alembic",
+      "version": "1.18.5",
+      "registry": "https://pypi.org/pypi/alembic/1.18.5/json",
+      "files": [
+        {
+          "filename": "alembic-1.18.5-py3-none-any.whl",
+          "sha256": "06d8ba9d04558022f5395e9317de03d270f3dced49cee01f89fe7a13c26f14bc"
+        }
+      ]
+    },
+    {
+      "name": "anyio",
+      "version": "4.14.2",
+      "registry": "https://pypi.org/pypi/anyio/4.14.2/json",
+      "files": [
+        {
+          "filename": "anyio-4.14.2-py3-none-any.whl",
+          "sha256": "9f505dda5ac9f0c8309b5e8bd445a8c2bf7246f3ce950121e45ea15bc41d1494"
+        }
+      ]
+    },
+    {
+      "name": "annotated-doc",
+      "version": "0.0.4",
+      "registry": "https://pypi.org/pypi/annotated-doc/0.0.4/json",
+      "files": [
+        {
+          "filename": "annotated_doc-0.0.4-py3-none-any.whl",
+          "sha256": "571ac1dc6991c450b25a9c2d84a3705e2ae7a53467b5d111c24fa8baabbed320"
+        }
+      ]
+    },
+    {
+      "name": "annotated-types",
+      "version": "0.7.0",
+      "registry": "https://pypi.org/pypi/annotated-types/0.7.0/json",
+      "files": [
+        {
+          "filename": "annotated_types-0.7.0-py3-none-any.whl",
+          "sha256": "1f02e8b43a8fbbc3f3e0d4f0f4bfc8131bcb4eebe8849b8e5c773f3a1c582a53"
+        }
+      ]
+    },
+    {
+      "name": "click",
+      "version": "8.4.2",
+      "registry": "https://pypi.org/pypi/click/8.4.2/json",
+      "files": [
+        {
+          "filename": "click-8.4.2-py3-none-any.whl",
+          "sha256": "e6f9f66136c816745b9d65817da91d61d957fb16e02e4dcd0552553c5a197b76"
+        }
+      ]
+    },
+    {
+      "name": "fastapi",
+      "version": "0.139.0",
+      "registry": "https://pypi.org/pypi/fastapi/0.139.0/json",
+      "files": [
+        {
+          "filename": "fastapi-0.139.0-py3-none-any.whl",
+          "sha256": "cf15e1e9e667ddb0ad63811e60bd11390d1aac838ca4a7a23f421807b2308189"
+        }
+      ]
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0",
+      "registry": "https://pypi.org/pypi/h11/0.16.0/json",
+      "files": [
+        {
+          "filename": "h11-0.16.0-py3-none-any.whl",
+          "sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86"
+        }
+      ]
+    },
+    {
+      "name": "idna",
+      "version": "3.18",
+      "registry": "https://pypi.org/pypi/idna/3.18/json",
+      "files": [
+        {
+          "filename": "idna-3.18-py3-none-any.whl",
+          "sha256": "7f952cbe720b688055e3f87de14f5c3e5fdaa8bc3928985c4077ca689de849a2"
+        }
+      ]
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.0",
+      "registry": "https://pypi.org/pypi/iniconfig/2.3.0/json",
+      "files": [
+        {
+          "filename": "iniconfig-2.3.0-py3-none-any.whl",
+          "sha256": "f631c04d2c48c52b84d0d0549c99ff3859c98df65b3101406327ecc7d53fbf12"
+        }
+      ]
+    },
+    {
+      "name": "Mako",
+      "version": "1.3.12",
+      "registry": "https://pypi.org/pypi/Mako/1.3.12/json",
+      "files": [
+        {
+          "filename": "mako-1.3.12-py3-none-any.whl",
+          "sha256": "8f61569480282dbf557145ce441e4ba888be453c30989f879f0d652e39f53ea9"
+        }
+      ]
+    },
+    {
+      "name": "MarkupSafe",
+      "version": "3.0.3",
+      "registry": "https://pypi.org/pypi/MarkupSafe/3.0.3/json",
+      "files": [
+        {
+          "filename": "markupsafe-3.0.3-cp312-cp312-macosx_11_0_arm64.whl",
+          "sha256": "1872df69a4de6aead3491198eaf13810b565bdbeec3ae2dc8780f14458ec73ce"
+        }
+      ]
+    },
+    {
+      "name": "packaging",
+      "version": "26.2",
+      "registry": "https://pypi.org/pypi/packaging/26.2/json",
+      "files": [
+        {
+          "filename": "packaging-26.2-py3-none-any.whl",
+          "sha256": "5fc45236b9446107ff2415ce77c807cee2862cb6fac22b8a73826d0693b0980e"
+        }
+      ]
+    },
+    {
+      "name": "pluggy",
+      "version": "1.6.0",
+      "registry": "https://pypi.org/pypi/pluggy/1.6.0/json",
+      "files": [
+        {
+          "filename": "pluggy-1.6.0-py3-none-any.whl",
+          "sha256": "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746"
+        }
+      ]
+    },
+    {
+      "name": "psycopg",
+      "version": "3.3.4",
+      "registry": "https://pypi.org/pypi/psycopg/3.3.4/json",
+      "files": [
+        {
+          "filename": "psycopg-3.3.4-py3-none-any.whl",
+          "sha256": "b6bbc25ccf05c8fad3b061d9db2ef0909a555171b84b07f29458a447253d679a"
+        }
+      ]
+    },
+    {
+      "name": "psycopg-binary",
+      "version": "3.3.4",
+      "registry": "https://pypi.org/pypi/psycopg-binary/3.3.4/json",
+      "files": [
+        {
+          "filename": "psycopg_binary-3.3.4-cp312-cp312-macosx_11_0_arm64.whl",
+          "sha256": "6402a9d8146cf4b3974ded3fd28a971e83dc6a0333eb7822524a3aa20b546578"
+        }
+      ]
+    },
+    {
+      "name": "pydantic",
+      "version": "2.13.4",
+      "registry": "https://pypi.org/pypi/pydantic/2.13.4/json",
+      "files": [
+        {
+          "filename": "pydantic-2.13.4-py3-none-any.whl",
+          "sha256": "45a282cde31d808236fd7ea9d919b128653c8b38b393d1c4ab335c62924d9aba"
+        }
+      ]
+    },
+    {
+      "name": "pydantic-core",
+      "version": "2.46.4",
+      "registry": "https://pypi.org/pypi/pydantic_core/2.46.4/json",
+      "files": [
+        {
+          "filename": "pydantic_core-2.46.4-cp312-cp312-macosx_11_0_arm64.whl",
+          "sha256": "962ccbab7b642487b1d8b7df90ef677e03134cf1fd8880bf698649b22a69371f"
+        }
+      ]
+    },
+    {
+      "name": "Pygments",
+      "version": "2.20.0",
+      "registry": "https://pypi.org/pypi/Pygments/2.20.0/json",
+      "files": [
+        {
+          "filename": "pygments-2.20.0-py3-none-any.whl",
+          "sha256": "81a9e26dd42fd28a23a2d169d86d7ac03b46e2f8b59ed4698fb4785f946d0176"
+        }
+      ]
+    },
+    {
+      "name": "pytest",
+      "version": "9.1.1",
+      "registry": "https://pypi.org/pypi/pytest/9.1.1/json",
+      "files": [
+        {
+          "filename": "pytest-9.1.1-py3-none-any.whl",
+          "sha256": "37a86b45efb9a47a61a36449063e8e18d0cab3161329fc099eb21783169c4f0c"
+        },
+        {
+          "filename": "pytest-9.1.1.tar.gz",
+          "sha256": "1088fbde8f2b49d95a549a195707afa7a76a3ce9bcadc26b6d71f0ffda5fe313"
+        }
+      ]
+    },
+    {
+      "name": "SQLAlchemy",
+      "version": "2.0.51",
+      "registry": "https://pypi.org/pypi/SQLAlchemy/2.0.51/json",
+      "files": [
+        {
+          "filename": "sqlalchemy-2.0.51-cp312-cp312-macosx_11_0_arm64.whl",
+          "sha256": "7d78702b26ba1c18b2d0fb2ea940ba7f17a9581b42e8361ff93920ebbee1235a"
+        }
+      ]
+    },
+    {
+      "name": "starlette",
+      "version": "1.3.1",
+      "registry": "https://pypi.org/pypi/starlette/1.3.1/json",
+      "files": [
+        {
+          "filename": "starlette-1.3.1-py3-none-any.whl",
+          "sha256": "c7372aae11c3c3f26a42df7bd626cec2f47d03483d261d369516a615a53714c6"
+        }
+      ]
+    },
+    {
+      "name": "typing-extensions",
+      "version": "4.16.0",
+      "registry": "https://pypi.org/pypi/typing_extensions/4.16.0/json",
+      "files": [
+        {
+          "filename": "typing_extensions-4.16.0-py3-none-any.whl",
+          "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+        }
+      ]
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.2",
+      "registry": "https://pypi.org/pypi/typing-inspection/0.4.2/json",
+      "files": [
+        {
+          "filename": "typing_inspection-0.4.2-py3-none-any.whl",
+          "sha256": "4ed1cacbdc298c220f1bd249ed5287caa16f34d44ef4e9c3d0cbad5b521545e7"
+        }
+      ]
+    },
+    {
+      "name": "uvicorn",
+      "version": "0.51.0",
+      "registry": "https://pypi.org/pypi/uvicorn/0.51.0/json",
+      "files": [
+        {
+          "filename": "uvicorn-0.51.0-py3-none-any.whl",
+          "sha256": "5d38af6cd620f2ae3849fb44fd4879e0890aa1febe8d47eb355fb45d93fe6a5b"
+        }
+      ]
+    }
+  ],
+  "gitBlobDigests": {
+    "app/__init__.py": {"gitBlobSha1": "5325a345818defa7e44ba8514e52ab7ed4192e23", "sha256": "be23fadb26a4f1bb2eae6605164f062556a040a82a1e75aef2b6b63b27327e09"},
+    "app/main.py": {"gitBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973", "sha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773"},
+    "app/api/__init__.py": {"gitBlobSha1": "47efa97a9250399898fa366e92e054f03df41bbb", "sha256": "c5e79b75137811726e30acef2fa5cfc649514fce1c86da771535b368f43238c0"},
+    "app/api/routes.py": {"gitBlobSha1": "30bb1af782d9f3531589faaf9fe437fca8a75190", "sha256": "b315e3f09b9ce993b1e4194d26f18ab8997486bd764fba051d230bfd9d2ab1c2"},
+    "app/db.py": {"gitBlobSha1": "90a9f22ee94a279fd955182d18bc8af5ad2aacbd", "sha256": "14e2fdaee9adb5f5465d52dd7f9a779d3ee0721d086193570b2d31f0dae68f1f"},
+    "app/models.py": {"gitBlobSha1": "6a1921d26411a472ca803370a590a3babe6aaf0b", "sha256": "84ca3c8b55b3edaa5d06c3563ba64519f67135508dcc553489f58e475bdcd8b6"},
+    "alembic.ini": {"gitBlobSha1": "e26d97ebf7be78966645086012b23988047af960", "sha256": "dbc958b2c761394e29770507b9f122c8b65611edd504e867f8694edd3d826b12"},
+    "alembic/env.py": {"gitBlobSha1": "a6325c958570d87fef33f303c8159f2cde3a3482", "sha256": "16f203772cd1a1a31351fccd252a3cfb626716edfecbba2c993323a665042113"},
+    "alembic/versions/0001_create_items.py": {"gitBlobSha1": "5bc78f3d27e620aba2f0acd32f414b52abbe4d3e", "sha256": "63ff3d99f9d7abca1da362ed98435a486da0e645ec0623a21389d0bf615e55b2"},
+    "pyproject.toml": {"gitBlobSha1": "a99d3a213eca8224069ca2b143e1f6e5f73c08e8", "sha256": "bf4fac401b575ccf1c03c142ee2809ba48dee81c3fd6672f9b91f0404d713e30"},
+    "requirements.lock": {"gitBlobSha1": "1e669cfcdc7f5477f171743d31fbb78c5ea1e1d0", "sha256": "0dec602df366b6a9030addc0df937087c6c0a525b9c1a6e68d4f9e8e1b11ba7d"},
+    "tests/test_health.py": {"gitBlobSha1": "c820d6eb4ae1da281262b34148e102844c123970", "sha256": "00f855268a6866ea7f9d4b4447bb447608376d1982629e360c0f11f86ede6d98"},
+    "tests/test_items.py": {"gitBlobSha1": "d36339a8db817736ac0b83d739d0ab9a7845baf2", "sha256": "6e8428ad766473c3c0063ee2dd4dbe8a36ee269938b762af995612bcbdad6fd7"},
+    "tests/test_migrations.py": {"gitBlobSha1": "675b8a60eaaa6af5ee9bf91d79d579f86161ebe0", "sha256": "d5615f203e813996cc0791fbeee29af54ea2433f4470075bb85849e1bac64084"}
+  },
+  "isolatedPythonTestGate": {
+    "installCommand": "python -m pip install --require-hashes -r requirements.lock",
+    "command": "python -m pytest -q tests/test_health.py::test_health tests/test_items.py::test_create_and_read_item tests/test_migrations.py::test_alembic_upgrade_and_downgrade",
+    "status": 0,
+    "result": "3 passed in 0.55s",
+    "stdoutStderrSha256": "5464270e1c0aacdeb907553e5765b3a87e57a741688a28191d4ba0fe12405e82",
+    "outputPath": "run-local/isolated-pytest.stdout-stderr.txt",
+    "executedAtUtc": "2026-07-14T23:10:33Z"
+  },
+  "redaction": {
+    "secretsPresent": false,
+    "personalPathsPresent": false,
+    "mutableSourceReferencesPresent": false,
+    "crossFrameworkTermsPresent": false,
+    "pythonPathRedacted": true
+  }
+}
