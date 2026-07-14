@@ -1,0 +1,1613 @@
+{
+  "schemaVersion": 1,
+  "runId": "p24-python-practice-20260715",
+  "framework": "FastAPI",
+  "repository": {
+    "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+    "owner": "yangchuansheng",
+    "visibility": "public",
+    "defaultBranch": "main",
+    "executionCommit": "5b77f435102e3b33595e7ab967945c68a3693929",
+    "executionTree": "483d2d75632498bff2f0129cf5d114525ee49978"
+  },
+  "sourceContract": {
+    "count": 59,
+    "recordSetSha256": "2959f89c1a8f7495985d9238a4fe2456ad51e453c9fb80bb47ecf4a70fa01128",
+    "authority": "Pinned Git commit/blob evidence with runtime values recorded downstream."
+  },
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#deploy-fastapi-sealos.resource.health-path",
+      "articleSlug": "deploy-fastapi-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<health-path>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/api/routes.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "literal",
+        "selector": "GET /health route",
+        "match": "source-owned contract"
+      },
+      "sourceBlobSha1": "30bb1af782d9f3531589faaf9fe437fca8a75190",
+      "sourceBlobSha256": "b315e3f09b9ce993b1e4194d26f18ab8997486bd764fba051d230bfd9d2ab1c2",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 1
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#deploy-fastapi-sealos.command.deploy",
+      "articleSlug": "deploy-fastapi-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "command",
+      "placeholderText": "<sealos-deploy-command>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 2
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#deploy-fastapi-sealos.command.asgi-import",
+      "articleSlug": "deploy-fastapi-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "command",
+      "placeholderText": "<asgi-import>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "literal",
+        "selector": "app.main:app ASGI import",
+        "match": "source-owned contract"
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 3
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#deploy-fastapi-sealos.resource.port",
+      "articleSlug": "deploy-fastapi-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<port>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "pyproject.toml",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "pyproject.toml",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "a99d3a213eca8224069ca2b143e1f6e5f73c08e8",
+      "sourceBlobSha256": "bf4fac401b575ccf1c03c142ee2809ba48dee81c3fd6672f9b91f0404d713e30",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 4
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#deploy-fastapi-sealos.resource.trusted-proxy-cidrs",
+      "articleSlug": "deploy-fastapi-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<trusted-proxy-cidrs>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 5
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#deploy-fastapi-sealos.environment.application-keys",
+      "articleSlug": "deploy-fastapi-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "environment-key",
+      "placeholderText": "<application-environment-keys>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "literal",
+        "selector": "DATABASE_URL or application configuration source",
+        "match": "source-owned contract"
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 6
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#deploy-fastapi-sealos.resource.app",
+      "articleSlug": "deploy-fastapi-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<sealos-app-name>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 7
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#deploy-fastapi-sealos.resource.namespace",
+      "articleSlug": "deploy-fastapi-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<sealos-namespace>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 8
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#deploy-fastapi-sealos.resource.image",
+      "articleSlug": "deploy-fastapi-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<container-image>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "pyproject.toml",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "pyproject.toml",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "a99d3a213eca8224069ca2b143e1f6e5f73c08e8",
+      "sourceBlobSha256": "bf4fac401b575ccf1c03c142ee2809ba48dee81c3fd6672f9b91f0404d713e30",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 9
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#deploy-fastapi-sealos.resource.public-url",
+      "articleSlug": "deploy-fastapi-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<public-app-url>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 10
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#deploy-fastapi-sealos.resource.footprint",
+      "articleSlug": "deploy-fastapi-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<recorded-resource-identities>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 11
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#deploy-fastapi-sealos.resource.runtime-state",
+      "articleSlug": "deploy-fastapi-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<runtime-truth-state>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 12
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-postgresql-sealos.command.deploy",
+      "articleSlug": "fastapi-postgresql-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "command",
+      "placeholderText": "<fastapi-postgresql-deploy-command>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 13
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-postgresql-sealos.resource.app",
+      "articleSlug": "fastapi-postgresql-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<fastapi-app-resource-name>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 14
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-postgresql-sealos.resource.database",
+      "articleSlug": "fastapi-postgresql-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<postgresql-resource-name>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 15
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-postgresql-sealos.resource.migration-job",
+      "articleSlug": "fastapi-postgresql-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<migration-job-name>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 16
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-postgresql-sealos.environment.database-keys",
+      "articleSlug": "fastapi-postgresql-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "environment-key",
+      "placeholderText": "<database-environment-keys>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/db.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "literal",
+        "selector": "DATABASE_URL or application configuration source",
+        "match": "source-owned contract"
+      },
+      "sourceBlobSha1": "90a9f22ee94a279fd955182d18bc8af5ad2aacbd",
+      "sourceBlobSha256": "14e2fdaee9adb5f5465d52dd7f9a779d3ee0721d086193570b2d31f0dae68f1f",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 17
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-postgresql-sealos.resource.pool-capacity",
+      "articleSlug": "fastapi-postgresql-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<per-pod-pool-capacity>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 18
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-postgresql-sealos.migration.command",
+      "articleSlug": "fastapi-postgresql-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "migration-detail",
+      "placeholderText": "alembic upgrade head",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "alembic/versions/0001_create_items.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "literal",
+        "selector": "Alembic migration module and revision",
+        "match": "source-owned contract"
+      },
+      "sourceBlobSha1": "5bc78f3d27e620aba2f0acd32f414b52abbe4d3e",
+      "sourceBlobSha256": "63ff3d99f9d7abca1da362ed98435a486da0e645ec0623a21389d0bf615e55b2",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 19
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-postgresql-sealos.migration.topology",
+      "articleSlug": "fastapi-postgresql-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "migration-detail",
+      "placeholderText": "<alembic-revision-topology>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "alembic/versions/0001_create_items.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "literal",
+        "selector": "Alembic migration module and revision",
+        "match": "source-owned contract"
+      },
+      "sourceBlobSha1": "5bc78f3d27e620aba2f0acd32f414b52abbe4d3e",
+      "sourceBlobSha256": "63ff3d99f9d7abca1da362ed98435a486da0e645ec0623a21389d0bf615e55b2",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 20
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-postgresql-sealos.migration.release-operation",
+      "articleSlug": "fastapi-postgresql-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "migration-detail",
+      "placeholderText": "<migration-release-operation>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "alembic/env.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "literal",
+        "selector": "Alembic migration module and revision",
+        "match": "source-owned contract"
+      },
+      "sourceBlobSha1": "a6325c958570d87fef33f303c8159f2cde3a3482",
+      "sourceBlobSha256": "16f203772cd1a1a31351fccd252a3cfb626716edfecbba2c993323a665042113",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 21
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-postgresql-sealos.migration.revision-state",
+      "articleSlug": "fastapi-postgresql-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "migration-detail",
+      "placeholderText": "<migration-revision>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "alembic/versions/0001_create_items.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "literal",
+        "selector": "Alembic migration module and revision",
+        "match": "source-owned contract"
+      },
+      "sourceBlobSha1": "5bc78f3d27e620aba2f0acd32f414b52abbe4d3e",
+      "sourceBlobSha256": "63ff3d99f9d7abca1da362ed98435a486da0e645ec0623a21389d0bf615e55b2",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 22
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-postgresql-sealos.resource.public-url",
+      "articleSlug": "fastapi-postgresql-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<public-api-url>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 23
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-postgresql-sealos.resource.api-create-path",
+      "articleSlug": "fastapi-postgresql-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<api-create-path>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/api/routes.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "literal",
+        "selector": "POST /items route",
+        "match": "source-owned contract"
+      },
+      "sourceBlobSha1": "30bb1af782d9f3531589faaf9fe437fca8a75190",
+      "sourceBlobSha256": "b315e3f09b9ce993b1e4194d26f18ab8997486bd764fba051d230bfd9d2ab1c2",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 24
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-postgresql-sealos.resource.api-read-path",
+      "articleSlug": "fastapi-postgresql-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<api-read-path>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/api/routes.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "literal",
+        "selector": "GET /items/{item_id} route",
+        "match": "source-owned contract"
+      },
+      "sourceBlobSha1": "30bb1af782d9f3531589faaf9fe437fca8a75190",
+      "sourceBlobSha256": "b315e3f09b9ce993b1e4194d26f18ab8997486bd764fba051d230bfd9d2ab1c2",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 25
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-postgresql-sealos.resource.footprint",
+      "articleSlug": "fastapi-postgresql-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<recorded-database-resource-identities>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 26
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.command.deploy",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "command",
+      "placeholderText": "<production-deploy-command>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 27
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.command.process",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "command",
+      "placeholderText": "<production-process-command>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "pyproject.toml",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "pyproject.toml",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "a99d3a213eca8224069ca2b143e1f6e5f73c08e8",
+      "sourceBlobSha256": "bf4fac401b575ccf1c03c142ee2809ba48dee81c3fd6672f9b91f0404d713e30",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 28
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.resource.cpu-request",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<cpu-request>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "pyproject.toml",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "pyproject.toml",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "a99d3a213eca8224069ca2b143e1f6e5f73c08e8",
+      "sourceBlobSha256": "bf4fac401b575ccf1c03c142ee2809ba48dee81c3fd6672f9b91f0404d713e30",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 29
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.resource.cpu-limit",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<cpu-limit>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "pyproject.toml",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "pyproject.toml",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "a99d3a213eca8224069ca2b143e1f6e5f73c08e8",
+      "sourceBlobSha256": "bf4fac401b575ccf1c03c142ee2809ba48dee81c3fd6672f9b91f0404d713e30",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 30
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.resource.memory-request",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<memory-request>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "pyproject.toml",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "pyproject.toml",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "a99d3a213eca8224069ca2b143e1f6e5f73c08e8",
+      "sourceBlobSha256": "bf4fac401b575ccf1c03c142ee2809ba48dee81c3fd6672f9b91f0404d713e30",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 31
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.resource.memory-limit",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<memory-limit>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "pyproject.toml",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "pyproject.toml",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "a99d3a213eca8224069ca2b143e1f6e5f73c08e8",
+      "sourceBlobSha256": "bf4fac401b575ccf1c03c142ee2809ba48dee81c3fd6672f9b91f0404d713e30",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 32
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.resource.namespace",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<production-namespace>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 33
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.resource.app",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<production-app-name>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 34
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.resource.database",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<production-database-name>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 35
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.environment.application-keys",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "environment-key",
+      "placeholderText": "<production-environment-keys>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "literal",
+        "selector": "DATABASE_URL or application configuration source",
+        "match": "source-owned contract"
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 36
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.migration.command",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "migration-detail",
+      "placeholderText": "<production-migration-command>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "alembic/versions/0001_create_items.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "literal",
+        "selector": "Alembic migration module and revision",
+        "match": "source-owned contract"
+      },
+      "sourceBlobSha1": "5bc78f3d27e620aba2f0acd32f414b52abbe4d3e",
+      "sourceBlobSha256": "63ff3d99f9d7abca1da362ed98435a486da0e645ec0623a21389d0bf615e55b2",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 37
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.migration.topology",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "migration-detail",
+      "placeholderText": "<production-migration-revision-topology>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "alembic/versions/0001_create_items.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "literal",
+        "selector": "Alembic migration module and revision",
+        "match": "source-owned contract"
+      },
+      "sourceBlobSha1": "5bc78f3d27e620aba2f0acd32f414b52abbe4d3e",
+      "sourceBlobSha256": "63ff3d99f9d7abca1da362ed98435a486da0e645ec0623a21389d0bf615e55b2",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 38
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.migration.release-operation",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "migration-detail",
+      "placeholderText": "<production-migration-release-operation>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "alembic/env.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "literal",
+        "selector": "Alembic migration module and revision",
+        "match": "source-owned contract"
+      },
+      "sourceBlobSha1": "a6325c958570d87fef33f303c8159f2cde3a3482",
+      "sourceBlobSha256": "16f203772cd1a1a31351fccd252a3cfb626716edfecbba2c993323a665042113",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 39
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.resource.migration-job",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<migration-job-name>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 40
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.resource.startup-path",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<startup-probe-path>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 41
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.resource.readiness-path",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<readiness-probe-path>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 42
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.resource.liveness-path",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<liveness-probe-path>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 43
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.resource.probe-timings",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<probe-timing-values>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "pyproject.toml",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "pyproject.toml",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "a99d3a213eca8224069ca2b143e1f6e5f73c08e8",
+      "sourceBlobSha256": "bf4fac401b575ccf1c03c142ee2809ba48dee81c3fd6672f9b91f0404d713e30",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 44
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.resource.uvicorn-timeout",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<uvicorn-graceful-timeout>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "pyproject.toml",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "pyproject.toml",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "a99d3a213eca8224069ca2b143e1f6e5f73c08e8",
+      "sourceBlobSha256": "bf4fac401b575ccf1c03c142ee2809ba48dee81c3fd6672f9b91f0404d713e30",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 45
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.resource.pod-grace",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<pod-termination-grace-period>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "pyproject.toml",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "pyproject.toml",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "a99d3a213eca8224069ca2b143e1f6e5f73c08e8",
+      "sourceBlobSha256": "bf4fac401b575ccf1c03c142ee2809ba48dee81c3fd6672f9b91f0404d713e30",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 46
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.resource.replicas",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<replica-count>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "pyproject.toml",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "pyproject.toml",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "a99d3a213eca8224069ca2b143e1f6e5f73c08e8",
+      "sourceBlobSha256": "bf4fac401b575ccf1c03c142ee2809ba48dee81c3fd6672f9b91f0404d713e30",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 47
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.resource.public-url",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<production-public-url>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 48
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.command.update",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "command",
+      "placeholderText": "<production-update-command>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 49
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.resource.current-image",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<current-image>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "pyproject.toml",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "pyproject.toml",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "a99d3a213eca8224069ca2b143e1f6e5f73c08e8",
+      "sourceBlobSha256": "bf4fac401b575ccf1c03c142ee2809ba48dee81c3fd6672f9b91f0404d713e30",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 50
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.resource.runtime-footprint",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<runtime-resource-identities>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 51
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.command.rollback",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "command",
+      "placeholderText": "<production-rollback-command>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 52
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.resource.previous-image",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<previous-image>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "pyproject.toml",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "pyproject.toml",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "a99d3a213eca8224069ca2b143e1f6e5f73c08e8",
+      "sourceBlobSha256": "bf4fac401b575ccf1c03c142ee2809ba48dee81c3fd6672f9b91f0404d713e30",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 53
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.resource.backup-product",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<backup-product>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "evidence/package-provenance.v1.json",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "evidence/package-provenance.v1.json",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "eeaa4512f331a95a75d6db16913f9e28df23076c",
+      "sourceBlobSha256": "b2ae2e749ec54b345f0415ea21208f30b86aa6b50a946b5da54431f2f7a04838",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 54
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.resource.backup-schedule",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<backup-schedule>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "evidence/package-provenance.v1.json",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "evidence/package-provenance.v1.json",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "eeaa4512f331a95a75d6db16913f9e28df23076c",
+      "sourceBlobSha256": "b2ae2e749ec54b345f0415ea21208f30b86aa6b50a946b5da54431f2f7a04838",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 55
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.resource.backup-rpo",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<backup-rpo>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "evidence/package-provenance.v1.json",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "evidence/package-provenance.v1.json",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "eeaa4512f331a95a75d6db16913f9e28df23076c",
+      "sourceBlobSha256": "b2ae2e749ec54b345f0415ea21208f30b86aa6b50a946b5da54431f2f7a04838",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 56
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.resource.backup-rto",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<backup-rto>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "evidence/package-provenance.v1.json",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "evidence/package-provenance.v1.json",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "eeaa4512f331a95a75d6db16913f9e28df23076c",
+      "sourceBlobSha256": "b2ae2e749ec54b345f0415ea21208f30b86aa6b50a946b5da54431f2f7a04838",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 57
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.resource.cleanup-identities",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "resource-identifier",
+      "placeholderText": "<manifest-recorded-cleanup-identities>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 58
+    },
+    {
+      "schemaVersion": 1,
+      "id": "docs/tutorial-evidence/python-v1.3.json#fastapi-production-deployment-sealos.command.cleanup",
+      "articleSlug": "fastapi-production-deployment-sealos",
+      "framework": "FastAPI",
+      "fieldKind": "command",
+      "placeholderText": "<production-cleanup-command>",
+      "source": {
+        "url": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+        "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+        "path": "app/main.py",
+        "replacement": null
+      },
+      "sourceMatch": {
+        "kind": "derived",
+        "selector": "app/main.py",
+        "rule": "Derive the deployment value from the pinned source contract and record the runtime comparison in the Phase 24 evidence ledger."
+      },
+      "sourceBlobSha1": "af3ec3ba923ae6ab7e835ed5d3174ef81c1e2973",
+      "sourceBlobSha256": "ed53e719eea8293124c07ce09dc9ff13eaede49fe3b64a266f8c38a2f851f773",
+      "runtimeEvidence": {
+        "runId": "p24-python-practice-20260715",
+        "status": "pending-runtime-proof"
+      },
+      "status": "source-verified",
+      "sequence": 59
+    }
+  ]
+}

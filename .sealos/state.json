@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "status": "source-prepared",
+  "source": {
+    "repository": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+    "branch": "main",
+    "commit": "5b77f435102e3b33595e7ab967945c68a3693929",
+    "tree": "483d2d75632498bff2f0129cf5d114525ee49978"
+  },
+  "runtime": {
+    "framework": "FastAPI",
+    "python": "3.12.13",
+    "server": "uvicorn",
+    "workers": 1,
+    "port": 8000,
+    "healthPath": "/health"
+  },
+  "release": {
+    "repository": "ghcr.io/yangchuansheng/sealos-fastapi-postgresql-example",
+    "baselineTag": "p24-python-practice-20260715-fastapi-baseline",
+    "updateTag": "p24-python-practice-20260715-fastapi-update",
+    "digests": "recorded after anonymous manifest verification"
+  }
+}

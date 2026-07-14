@@ -1,0 +1,164 @@
+name: Build FastAPI image
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_commit:
+        description: Full source commit SHA to test and build
+        required: true
+        type: string
+      image_tag:
+        description: Run-scoped immutable image tag
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  packages: write
+
+env:
+  IMAGE_REPOSITORY: ghcr.io/yangchuansheng/sealos-fastapi-postgresql-example
+  TEST_COMMAND: python -m pytest -q tests/test_health.py::test_health tests/test_items.py::test_create_and_read_item tests/test_migrations.py::test_alembic_upgrade_and_downgrade
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out requested source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ inputs.source_commit }}
+          fetch-depth: 0
+
+      - name: Assert dispatch and source identity
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF_NAME" = main
+          test "${{ inputs.source_commit }}" = "$(git rev-parse HEAD)"
+          [[ "${{ inputs.source_commit }}" =~ ^[0-9a-f]{40}$ ]]
+          [[ "${{ inputs.image_tag }}" =~ ^p24-python-practice-20260715-fastapi-(baseline|update)$ ]]
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+
+      - name: Install hash-pinned dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m venv "$RUNNER_TEMP/fastapi-venv"
+          "$RUNNER_TEMP/fastapi-venv/bin/python" -m pip install --require-hashes -r requirements.lock
+
+      - name: Run exact isolated pytest gate
+        shell: bash
+        run: |
+          set -uo pipefail
+          output_file="$RUNNER_TEMP/fastapi-test-output.txt"
+          "$RUNNER_TEMP/fastapi-venv/bin/python" -m pytest -q tests/test_health.py::test_health tests/test_items.py::test_create_and_read_item tests/test_migrations.py::test_alembic_upgrade_and_downgrade 2>&1 | tee "$output_file"
+          test_status=${PIPESTATUS[0]}
+          output_sha256=$(sha256sum "$output_file" | awk '{print $1}')
+          cat > "$RUNNER_TEMP/test-record.json" <<EOF
+          {
+            "command": "${TEST_COMMAND}",
+            "status": ${test_status},
+            "stdoutStderrSha256": "${output_sha256}",
+            "pythonVersion": "$(python --version 2>&1)",
+            "lockSha256": "$(sha256sum requirements.lock | awk '{print $1}')",
+            "requestedSourceCommit": "${{ inputs.source_commit }}",
+            "checkedOutHead": "$(git rev-parse HEAD)",
+            "testSourceSha": "$(git rev-parse HEAD)",
+            "builtSourceSha": "$(git rev-parse HEAD)"
+          }
+          EOF
+          exit "$test_status"
+
+      - name: Upload test identity
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: fastapi-test-${{ inputs.image_tag }}
+          path: ${{ runner.temp }}/test-record.json
+          if-no-files-found: error
+
+  build:
+    needs: test
+    if: needs.test.result == 'success'
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out requested source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ inputs.source_commit }}
+          fetch-depth: 0
+
+      - name: Assert dispatch and source identity
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF_NAME" = main
+          test "${{ inputs.source_commit }}" = "$(git rev-parse HEAD)"
+          [[ "${{ inputs.image_tag }}" =~ ^p24-python-practice-20260715-fastapi-(baseline|update)$ ]]
+
+      - name: Download passing test identity
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: fastapi-test-${{ inputs.image_tag }}
+          path: ${{ runner.temp }}/test-record
+
+      - name: Assert passing test identity
+        shell: bash
+        run: |
+          set -euo pipefail
+          jq -e \
+            --arg commit "${{ inputs.source_commit }}" \
+            '.status == 0 and .requestedSourceCommit == $commit and .checkedOutHead == $commit and .testSourceSha == $commit and .builtSourceSha == $commit and (.stdoutStderrSha256 | test("^[0-9a-f]{64}$"))' \
+            "$RUNNER_TEMP/test-record/test-record.json"
+
+      - name: Log in to GHCR
+        uses: docker/login-action@74a5d142397b4f367a81961eba4e8cd7edddf772
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Buildx
+        uses: docker/setup-buildx-action@b5ca514318bd6ebac0fb2aedd5d36ec1b5c232a2
+
+      - name: Build and publish requested immutable tag
+        id: build
+        uses: docker/build-push-action@263435318d21b8e681c14492fe198d362a7d2c83
+        with:
+          context: .
+          push: true
+          tags: ${{ env.IMAGE_REPOSITORY }}:${{ inputs.image_tag }}
+          labels: |
+            org.opencontainers.image.source=https://github.com/yangchuansheng/sealos-fastapi-postgresql-example
+            org.opencontainers.image.revision=${{ inputs.source_commit }}
+            org.opencontainers.image.version=${{ inputs.image_tag }}
+          provenance: mode=max
+          sbom: true
+
+      - name: Record published image identity
+        shell: bash
+        run: |
+          set -euo pipefail
+          source_commit="${{ inputs.source_commit }}"
+          checked_out_head="$(git rev-parse HEAD)"
+          test "$source_commit" = "$checked_out_head"
+          jq --arg digest "${{ steps.build.outputs.digest }}" \
+            --arg tag "${{ inputs.image_tag }}" \
+            --arg source "$source_commit" \
+            --arg run "$GITHUB_RUN_ID" \
+            '{imageRepository: env.IMAGE_REPOSITORY, imageTag: $tag, imageDigest: $digest, sourceCommit: $source, checkedOutHead: $source, builtSourceSha: $source, workflowRunId: $run}' \
+            > "$RUNNER_TEMP/image-record.json"
+
+      - name: Upload release identity
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: fastapi-release-${{ inputs.image_tag }}
+          path: |
+            ${{ runner.temp }}/test-record/test-record.json
+            ${{ runner.temp }}/image-record.json
+          if-no-files-found: error

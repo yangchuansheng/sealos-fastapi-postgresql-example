@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "framework": "FastAPI",
+  "language": "python",
+  "packageManager": "pip",
+  "source": {
+    "repository": "https://github.com/yangchuansheng/sealos-fastapi-postgresql-example",
+    "owner": "yangchuansheng",
+    "visibility": "public",
+    "defaultBranch": "main",
+    "executionCommit": "5b77f435102e3b33595e7ab967945c68a3693929",
+    "executionTree": "483d2d75632498bff2f0129cf5d114525ee49978",
+    "closurePath": "evidence/source-closure.v1.json",
+    "closureRecords": 59
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "server": "uvicorn",
+    "workers": 1,
+    "port": 8000,
+    "healthPath": "/health"
+  },
+  "database": {
+    "engine": "PostgreSQL",
+    "driver": "psycopg[binary]",
+    "migration": "alembic upgrade head"
+  },
+  "image": {
+    "repository": "ghcr.io/yangchuansheng/sealos-fastapi-postgresql-example",
+    "identity": "recorded in docs/tutorial-evidence/python-v1.3/artifacts.json"
+  }
+}
