@@ -147,7 +147,7 @@ jobs:
           source_commit="${{ inputs.source_commit }}"
           checked_out_head="$(git rev-parse HEAD)"
           test "$source_commit" = "$checked_out_head"
-          jq --arg digest "${{ steps.build.outputs.digest }}" \
+          jq -n --arg digest "${{ steps.build.outputs.digest }}" \
             --arg tag "${{ inputs.image_tag }}" \
             --arg source "$source_commit" \
             --arg run "$GITHUB_RUN_ID" \
