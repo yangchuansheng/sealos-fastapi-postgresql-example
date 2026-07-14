@@ -18,7 +18,7 @@
   },
   "lock": {
     "path": "requirements.lock",
-    "sha256": "f8106437b9b1fd0d8e6b28493db3144802813d67dcf135eb82da64170bf57864"
+    "sha256": "1da0fffd1b2568ae2604e4706da857fdf18585b3d7fb4586567f8fd553135ddf"
   },
   "packageArtifacts": [
     {
@@ -84,6 +84,21 @@
         {
           "filename": "fastapi-0.139.0-py3-none-any.whl",
           "sha256": "cf15e1e9e667ddb0ad63811e60bd11390d1aac838ca4a7a23f421807b2308189"
+        }
+      ]
+    },
+    {
+      "name": "greenlet",
+      "version": "3.5.3",
+      "registry": "https://pypi.org/pypi/greenlet/3.5.3/json",
+      "files": [
+        {
+          "filename": "greenlet-3.5.3-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+          "sha256": "87142215824be6ac05e2e8e2786eec307ccbc27c36723c3881959df654af6861"
+        },
+        {
+          "filename": "greenlet-3.5.3-cp312-cp312-macosx_11_0_universal2.whl",
+          "sha256": "719757059f5a53fd0dde23f78cffeafcdd97b21c850ddb7ca684a3c1a1f122e2"
         }
       ]
     },
@@ -317,7 +332,7 @@
     "alembic/env.py": {"gitBlobSha1": "a6325c958570d87fef33f303c8159f2cde3a3482", "sha256": "16f203772cd1a1a31351fccd252a3cfb626716edfecbba2c993323a665042113"},
     "alembic/versions/0001_create_items.py": {"gitBlobSha1": "5bc78f3d27e620aba2f0acd32f414b52abbe4d3e", "sha256": "63ff3d99f9d7abca1da362ed98435a486da0e645ec0623a21389d0bf615e55b2"},
     "pyproject.toml": {"gitBlobSha1": "a99d3a213eca8224069ca2b143e1f6e5f73c08e8", "sha256": "bf4fac401b575ccf1c03c142ee2809ba48dee81c3fd6672f9b91f0404d713e30"},
-    "requirements.lock": {"gitBlobSha1": "02988b2d22b256f6b97232e75b030af7799a1d2c", "sha256": "f8106437b9b1fd0d8e6b28493db3144802813d67dcf135eb82da64170bf57864"},
+    "requirements.lock": {"gitBlobSha1": "83a92b4b144eeda57afe57b1502ba239085e852b", "sha256": "1da0fffd1b2568ae2604e4706da857fdf18585b3d7fb4586567f8fd553135ddf"},
     "tests/test_health.py": {"gitBlobSha1": "c820d6eb4ae1da281262b34148e102844c123970", "sha256": "00f855268a6866ea7f9d4b4447bb447608376d1982629e360c0f11f86ede6d98"},
     "tests/test_items.py": {"gitBlobSha1": "d36339a8db817736ac0b83d739d0ab9a7845baf2", "sha256": "6e8428ad766473c3c0063ee2dd4dbe8a36ee269938b762af995612bcbdad6fd7"},
     "tests/test_migrations.py": {"gitBlobSha1": "675b8a60eaaa6af5ee9bf91d79d579f86161ebe0", "sha256": "d5615f203e813996cc0791fbeee29af54ea2433f4470075bb85849e1bac64084"}
@@ -326,10 +341,10 @@
     "installCommand": "python -m pip install --require-hashes -r requirements.lock",
     "command": "python -m pytest -q tests/test_health.py::test_health tests/test_items.py::test_create_and_read_item tests/test_migrations.py::test_alembic_upgrade_and_downgrade",
     "status": 0,
-    "result": "3 passed in 6.60s",
-    "stdoutStderrSha256": "b22939da84b491e30f6fa46f7ae07634f85e0fbddb1622718e9d987d48138c69",
+    "result": "3 passed in 7.01s",
+    "stdoutStderrSha256": "14029ca9693a8807b08178ddd46cd44db00ef5e6bfccc4beff374adfe10e2fec",
     "outputPath": "run-local/isolated-pytest.stdout-stderr.txt",
-    "executedAtUtc": "2026-07-14T23:18:42Z"
+    "executedAtUtc": "2026-07-14T23:42:49Z"
   },
   "redaction": {
     "secretsPresent": false,
