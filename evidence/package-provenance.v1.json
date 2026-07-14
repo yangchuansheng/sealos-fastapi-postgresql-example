@@ -7,8 +7,8 @@
     "visibility": "public",
     "defaultBranch": "main",
     "pushPermission": true,
-    "testedSourceCommit": "ec91a47f6c2b5d1253cc603eb06df922bd901fff",
-    "testedSourceTree": "a4e88de39bce75b2a6f24792deec292ee18e1df7"
+    "testedSourceCommit": "9fe8323f139c9a11a8683b7eee364f339fbd1e6d",
+    "testedSourceTree": "40dfefaa1c6872d13e57471f111eb31b5d6d3a0a"
   },
   "sourceTreeMode": "0700",
   "python": {
@@ -18,7 +18,7 @@
   },
   "lock": {
     "path": "requirements.lock",
-    "sha256": "0dec602df366b6a9030addc0df937087c6c0a525b9c1a6e68d4f9e8e1b11ba7d"
+    "sha256": "f8106437b9b1fd0d8e6b28493db3144802813d67dcf135eb82da64170bf57864"
   },
   "packageArtifacts": [
     {
@@ -139,6 +139,10 @@
         {
           "filename": "markupsafe-3.0.3-cp312-cp312-macosx_11_0_arm64.whl",
           "sha256": "1872df69a4de6aead3491198eaf13810b565bdbeec3ae2dc8780f14458ec73ce"
+        },
+        {
+          "filename": "markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+          "sha256": "d6dd0be5b5b189d31db7cda48b91d7e0a9795f31430b7f271219ab30f1d3ac9d"
         }
       ]
     },
@@ -183,6 +187,10 @@
         {
           "filename": "psycopg_binary-3.3.4-cp312-cp312-macosx_11_0_arm64.whl",
           "sha256": "6402a9d8146cf4b3974ded3fd28a971e83dc6a0333eb7822524a3aa20b546578"
+        },
+        {
+          "filename": "psycopg_binary-3.3.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+          "sha256": "e7510c37550f91a187e3660a8cc50d4b760f8c3b8b2f89ebc5698cd2c7f2c85d"
         }
       ]
     },
@@ -205,6 +213,10 @@
         {
           "filename": "pydantic_core-2.46.4-cp312-cp312-macosx_11_0_arm64.whl",
           "sha256": "962ccbab7b642487b1d8b7df90ef677e03134cf1fd8880bf698649b22a69371f"
+        },
+        {
+          "filename": "pydantic_core-2.46.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "sha256": "926c9541b14b12b1681dca8a0b75feb510b06c6341b70a8e500c2fdcff837cce"
         }
       ]
     },
@@ -242,6 +254,10 @@
         {
           "filename": "sqlalchemy-2.0.51-cp312-cp312-macosx_11_0_arm64.whl",
           "sha256": "7d78702b26ba1c18b2d0fb2ea940ba7f17a9581b42e8361ff93920ebbee1235a"
+        },
+        {
+          "filename": "sqlalchemy-2.0.51-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+          "sha256": "1d21ce524ab86c23046e992a5b81cb54c21079c6df6e78b8fc77d77cac70a6b9"
         }
       ]
     },
@@ -301,7 +317,7 @@
     "alembic/env.py": {"gitBlobSha1": "a6325c958570d87fef33f303c8159f2cde3a3482", "sha256": "16f203772cd1a1a31351fccd252a3cfb626716edfecbba2c993323a665042113"},
     "alembic/versions/0001_create_items.py": {"gitBlobSha1": "5bc78f3d27e620aba2f0acd32f414b52abbe4d3e", "sha256": "63ff3d99f9d7abca1da362ed98435a486da0e645ec0623a21389d0bf615e55b2"},
     "pyproject.toml": {"gitBlobSha1": "a99d3a213eca8224069ca2b143e1f6e5f73c08e8", "sha256": "bf4fac401b575ccf1c03c142ee2809ba48dee81c3fd6672f9b91f0404d713e30"},
-    "requirements.lock": {"gitBlobSha1": "1e669cfcdc7f5477f171743d31fbb78c5ea1e1d0", "sha256": "0dec602df366b6a9030addc0df937087c6c0a525b9c1a6e68d4f9e8e1b11ba7d"},
+    "requirements.lock": {"gitBlobSha1": "02988b2d22b256f6b97232e75b030af7799a1d2c", "sha256": "f8106437b9b1fd0d8e6b28493db3144802813d67dcf135eb82da64170bf57864"},
     "tests/test_health.py": {"gitBlobSha1": "c820d6eb4ae1da281262b34148e102844c123970", "sha256": "00f855268a6866ea7f9d4b4447bb447608376d1982629e360c0f11f86ede6d98"},
     "tests/test_items.py": {"gitBlobSha1": "d36339a8db817736ac0b83d739d0ab9a7845baf2", "sha256": "6e8428ad766473c3c0063ee2dd4dbe8a36ee269938b762af995612bcbdad6fd7"},
     "tests/test_migrations.py": {"gitBlobSha1": "675b8a60eaaa6af5ee9bf91d79d579f86161ebe0", "sha256": "d5615f203e813996cc0791fbeee29af54ea2433f4470075bb85849e1bac64084"}
@@ -310,10 +326,10 @@
     "installCommand": "python -m pip install --require-hashes -r requirements.lock",
     "command": "python -m pytest -q tests/test_health.py::test_health tests/test_items.py::test_create_and_read_item tests/test_migrations.py::test_alembic_upgrade_and_downgrade",
     "status": 0,
-    "result": "3 passed in 0.55s",
-    "stdoutStderrSha256": "5464270e1c0aacdeb907553e5765b3a87e57a741688a28191d4ba0fe12405e82",
+    "result": "3 passed in 6.60s",
+    "stdoutStderrSha256": "b22939da84b491e30f6fa46f7ae07634f85e0fbddb1622718e9d987d48138c69",
     "outputPath": "run-local/isolated-pytest.stdout-stderr.txt",
-    "executedAtUtc": "2026-07-14T23:10:33Z"
+    "executedAtUtc": "2026-07-14T23:18:42Z"
   },
   "redaction": {
     "secretsPresent": false,
