@@ -15,7 +15,7 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
 
 app = FastAPI(
     title="Sealos FastAPI PostgreSQL Example",
-    version="1.0.0",
+    version="1.0.1",
     lifespan=lifespan,
 )
 app.include_router(router)
